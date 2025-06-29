@@ -1,1 +1,13 @@
 my_env/
+venv/
+
+data/raw/
+data/processed/
+*.csv
+
+reports/
+visualizations/
+logs/
+
+.vscode/
+.idea/
