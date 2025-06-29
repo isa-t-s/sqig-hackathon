@@ -136,7 +136,7 @@ class ModelEvaluator:
 
 def train_model(model: torch.nn.Module, train_loader: DataLoader, 
                val_loader: DataLoader, num_epochs: int = 100,
-               learning_rate: float = 0.001, device: torch.device = None) -> Tuple[torch.nn.Module, Dict[str, List[float]]]:
+               learning_rate: float = 0.001, device: Optional[torch.device] = None) -> Tuple[torch.nn.Module, Dict[str, List[float]]]:
     
 
     if device is None:
